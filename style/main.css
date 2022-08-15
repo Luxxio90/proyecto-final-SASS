@@ -9,6 +9,7 @@
 /*estilos generales*/
 body{
     background-color: beige;
+    font-size: 1rem;
 }
 
 
@@ -18,6 +19,7 @@ body{
 header div nav ul{
     display: flex;
     column-gap: 10px;
+    width: 100%;
 }
 
 header div nav ul li{
@@ -35,6 +37,7 @@ header div nav ul li{
     justify-content: center;
     padding: 0.5rem;
     border: 1px solid #ddd;
+    font-size: 0.7rem;
 }
 
 .top h1{
@@ -52,7 +55,7 @@ header div nav ul li{
 }
 
 .imagenLogo{
-    width: 20rem;
+    width: 20%;
 }
 
 .tituloProyecto{
@@ -164,25 +167,34 @@ footer{
 /*pantalla de NOVEDADES*/
 
 .imagen1, .imagen2,.imagen3,.imagen4,.imagen5,.imagen6{
-    width: 250px;
+    width: 200px;
+    
+    
 }
 
 .main-novedades{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px 400px;
     grid-template-areas: "caja1 caja2"
                         "caja3 caja4"
                         "caja5 caja6";
     align-items: center;
     justify-content: center;
     justify-items: center;
+    height:1200px;
 }
+
+
 
 .caja1{
     grid-area: caja1;
     margin:2rem;
+    
 }
 .caja2{
     grid-area: caja2;
     margin:2rem;
+    
 }
 .caja3{
     grid-area: caja3;
@@ -234,10 +246,11 @@ footer{
   .formulario{
     background-color: red;
     margin-top: 50px;
+    
 }
   
   form {
-    width: 450px;
+    width: 300px;
     /*para que este centrado*/
     margin: 5px;
     background: rgba(106, 74, 74, 0.4);
@@ -258,34 +271,6 @@ footer{
     max-width: 100%;
     min-width: 100%;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -351,6 +336,7 @@ footer{
     }
 
     .main-novedades{
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "caja1 caja2 caja3"
                             "caja4 caja5 caja6"
                             ;
@@ -358,6 +344,11 @@ footer{
         justify-content: center;
         justify-items: center;
     }
+
+    .main-novedades div{
+        text-align: center;
+    }
+
 
     .algunosTrabajos{
         display: block;
@@ -370,4 +361,16 @@ footer{
                            
 /*rama 2*/
     }
+}
+
+
+/*HOVER*/
+
+.top-nav nav ul li:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 8px 10px black;
+}
+
+.top-presupuesto h2:hover{
+    transform: scale(1.1);
 }
