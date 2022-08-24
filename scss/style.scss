@@ -1,12 +1,13 @@
+@import "base/mixin";
+@import "base/variables";
+
+
 /*RESET*/
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    @include reset;
 }
 
 /*estilos generales*/
-
 body{
     background-color: beige;
     font-size: 1rem;
@@ -63,11 +64,7 @@ header div nav ul li{
 }
 
 .top-nav{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
+    @include top-nav
 }
 
 /*estilos de MAIN*/
@@ -77,19 +74,7 @@ header div nav ul li{
 }
 
 main{
-    height: 100vh;
-    display: grid;
-    grid-template-columns:auto ;
-    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
-
-    grid-template-areas: "texto-principal"
-                        "imagen-index"
-                        "texto-index1"
-                        "texto-index2"
-                        "texto-index3";
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
+    @include mainEspecifico;
 
 }
 
@@ -129,15 +114,7 @@ footer{
 }
 
 .algunosTrabajos{
-    display: none;
-    border: 1px solid black;
-    width: 400px;
-    height: 400px;
-    padding:30px;
-    font-size: 2rem;
-    list-style: none;
-    background-color: moccasin;
-    justify-content: space-around;
+    @include algunasTrabajos;
 }
 
 .main-producto{
