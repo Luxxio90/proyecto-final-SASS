@@ -14,13 +14,12 @@ header div nav ul {
   display: flex;
   column-gap: 10px;
   width: 100%; }
-
-header div nav ul li {
-  list-style: none;
-  background-color: whitesmoke;
-  padding: 5px;
-  border-radius: 25px;
-  font-weight: bold; }
+  header div nav ul li {
+    list-style: none;
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 25px;
+    font-weight: bold; }
 
 .top-presupuesto {
   width: 100%;
@@ -180,7 +179,7 @@ footer {
 
 /*PANTALLA DE FORMULARIO*/
 .formulario {
-  background-color: red;
+  background-color: darkgrey;
   margin-top: 50px; }
 
 form {

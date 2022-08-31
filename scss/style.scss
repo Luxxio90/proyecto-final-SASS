@@ -1,5 +1,6 @@
 @import "base/mixin";
 @import "base/variables";
+@import "base/listas";
 
 
 /*RESET*/
@@ -9,31 +10,39 @@
 
 /*estilos generales*/
 body{
-    background-color: beige;
+    background-color: nth($list:$colores,$n:2);
     font-size: 1rem;
 }
 
 /*estilos de HEADER*/
-header div nav ul{
-    display: flex;
-    column-gap: 10px;
-    width: 100%;
-}
+header {
+    div{
+        nav{
+            ul{
+                display: flex;
+                column-gap: 10px;
+                width: 100%;
 
-header div nav ul li{
-    list-style: none;
-    background-color: whitesmoke;
+                li{
+                    list-style: none;
+    background-color: nth($list:$colores,$n:4);
     padding: 5px;
     border-radius: 25px;
     font-weight: bold;
-}
+                }
+            } 
+            }
+        }
+    }
+
+   
 
 .top-presupuesto{
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 0.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid nth($list:$colores,$n:1);
     font-size: 0.7rem;
 }
 
@@ -48,7 +57,7 @@ header div nav ul li{
     display: flex;
     justify-content: center;
     padding: 0.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid nth($list:$colores,$n:1);
 }
 
 .imagenLogo{
@@ -60,7 +69,7 @@ header div nav ul li{
     display: flex;
     justify-content: center;
     padding: 0.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid nth($list:$colores,$n:1) ;
 }
 
 .top-nav{
@@ -215,7 +224,7 @@ footer{
   /*PANTALLA DE FORMULARIO*/
   
   .formulario{
-    background-color: red;
+    background-color: dnth($list:$colores,$n:3);
     margin-top: 50px;
     
 }
@@ -278,7 +287,7 @@ footer{
         grid-template-areas: "top-presupuesto top-presupuesto"
                             "div-logo tituloProyecto"
                             "div-logo top-nav";
-    border: 1px solid #ddd;
+    border: 1px solid nth($list:$colores,$n:1);
     }
 
     .top-presupuesto{
