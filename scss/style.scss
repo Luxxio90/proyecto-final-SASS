@@ -92,21 +92,22 @@ main{
     margin: auto;
 }
 .imagen-index{
-    grid-area: imagen-index;
-    
-    
+    grid-area: imagen-index;    
 }
 .texto-index1{
     grid-area: texto-index1;
+    margin:1rem;
   
     
 }
 .texto-index2{
     grid-area: texto-index2;
+    margin:1rem;
     
 }
 .texto-index3{
     grid-area: texto-index3;
+    margin:1rem;
    
 }
 
@@ -141,6 +142,7 @@ footer{
 }
 .textoProducto{
     grid-area: textoProducto;
+    margin:1rem;
 }
 .algunosTrabajos{
     grid-area: algunosTrabajos;
@@ -211,9 +213,11 @@ footer{
 
 .imagenGigante{
     grid-area: imagenGigante;
+    margin:1rem;
 }
 .textoParaEmpresa{
     grid-area: textoParaEmpresa;
+    margin:1rem;
 }
 
 
@@ -224,7 +228,7 @@ footer{
   /*PANTALLA DE FORMULARIO*/
   
   .formulario{
-    background-color: dnth($list:$colores,$n:3);
+    background-color: nth($list:$colores,$n:3);
     margin-top: 50px;
     
 }

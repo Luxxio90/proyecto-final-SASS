@@ -80,13 +80,16 @@ main {
   grid-area: imagen-index; }
 
 .texto-index1 {
-  grid-area: texto-index1; }
+  grid-area: texto-index1;
+  margin: 1rem; }
 
 .texto-index2 {
-  grid-area: texto-index2; }
+  grid-area: texto-index2;
+  margin: 1rem; }
 
 .texto-index3 {
-  grid-area: texto-index3; }
+  grid-area: texto-index3;
+  margin: 1rem; }
 
 /**/
 footer {
@@ -119,7 +122,8 @@ footer {
   grid-area: imgProducto; }
 
 .textoProducto {
-  grid-area: textoProducto; }
+  grid-area: textoProducto;
+  margin: 1rem; }
 
 .algunosTrabajos {
   grid-area: algunosTrabajos; }
@@ -172,10 +176,12 @@ footer {
   grid-template-areas: "imagenGigante" "textoParaEmpresa"; }
 
 .imagenGigante {
-  grid-area: imagenGigante; }
+  grid-area: imagenGigante;
+  margin: 1rem; }
 
 .textoParaEmpresa {
-  grid-area: textoParaEmpresa; }
+  grid-area: textoParaEmpresa;
+  margin: 1rem; }
 
 /*PANTALLA DE FORMULARIO*/
 .formulario {
