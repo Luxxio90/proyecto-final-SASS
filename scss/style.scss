@@ -79,7 +79,7 @@ header {
 /*estilos de MAIN*/
 
 .imagenGuitarra{
-    width: 20rem
+    width: 70%;
 }
 
 main{
@@ -92,7 +92,9 @@ main{
     margin: auto;
 }
 .imagen-index{
-    grid-area: imagen-index;    
+    grid-area: imagen-index; 
+   display: grid;
+   place-items: center;
 }
 .texto-index1{
     grid-area: texto-index1;
